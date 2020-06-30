@@ -1,0 +1,40 @@
+
+.float{
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    height: 350px;
+    float:right;
+    
+}
+body{
+    background-color: purple;
+    background-image: url('images/5.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    background-size: 72% 80%;
+}
+h1{
+    color: floralwhite;  
+    text-align: center;
+}
+p{
+    text-align: bottom;
+    display: flex;
+
+
+}
+ul {
+    float: left;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+  }
+  ol{ 
+      float: right;
+
+  }

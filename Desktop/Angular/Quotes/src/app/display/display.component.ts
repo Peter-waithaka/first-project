@@ -21,6 +21,7 @@ export class DisplayComponent implements OnInit {
   ngOnInit(): void {
   }
   
+  
  
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
@@ -29,4 +30,5 @@ export class DisplayComponent implements OnInit {
     this.quotes.push(quote)
     console.log(quote.quote)
   }
+  
 }

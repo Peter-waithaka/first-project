@@ -1,8 +1,11 @@
+<div class="container-fluid">
+    <div class="card-body">
+
 <form (ngSubmit)="submitQuote()" #goalForm='ngForm' let i='index'>
 
     <div class="row">
-        <div class="col-md-1">
-            <div class="form-group"></div>
+        <div class="form-group" class="col-md-6">
+            
             <label for="title">title:</label><br>
             <input type="text" class="form-control" id="title" [(ngModel)]="newQuote.title" name="title"
                 #quote='ngModel' required><br>
@@ -12,15 +15,17 @@
         </div>
     </div>
 
-    <label for="quotes">quote:</label><br>
-    <div class="form-group">
-        <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel'
-            required><br>
+    
+    <div class="form-group" class="col-md-6" >
+        <label for="quotes">quote:</label><br>
+        <textarea id="quote"  rows="8" placeholder="Quote.." class="form-control"
+        [(ngModel)]="newQuote.quote" name="quote" #message='ngModel' required></textarea>
         <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
             <p>Quote is required</p>
         </div>
     </div>
     <div>
+        <div class="form-group" class="col-md-6" >
         <label for="author">author:</label><br>
         <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #quote='ngModel'
             required><br>
@@ -29,5 +34,7 @@
         </div>
         <button type="submit">Submit</button>
     </div>
+</div>
+<!-- </div> -->
 
     <!-- </form> -->

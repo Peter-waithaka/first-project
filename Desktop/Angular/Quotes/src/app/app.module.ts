@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { DisplayComponent } from './display/display.component';
 import { DateCountPipe } from './date-count.pipe';
-import { InfoComponent } from './info/info.component';
+import { VoteComponent } from './vote/vote.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { InfoComponent } from './info/info.component';
     FormComponent,
     DisplayComponent,
     DateCountPipe,
-    InfoComponent
+    VoteComponent,
   ],
   imports: [
     BrowserModule,
